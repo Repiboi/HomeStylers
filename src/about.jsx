@@ -62,7 +62,7 @@ const HomeStylerAbout = () => {
                 </div>
                 <div className="team-member">
                     <img src={Isa} alt="Isaac" />
-                    <h4>Fawaz</h4>
+                    <h4>Isaac</h4>
                 </div>
             </div>
             <Value/>
