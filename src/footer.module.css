@@ -1,0 +1,122 @@
+.footer {
+    background-color: #333;
+    padding: 40px 20px;
+    font-family: 'Arial', sans-serif;
+    color:white;
+  }
+  
+  .footerContainer {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  
+  .footerColumn {
+    flex: 1;
+    min-width: 200px;
+    margin: 10px;
+    margin-left: 40PX;
+    width: 100%;
+  }
+  .font h3{
+    font-size: 40px;
+  }
+  
+  .footerColumn h3 {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+  
+  .footerColumn ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .footerColumn ul li {
+    margin-bottom: 10px;
+  }
+  .navLink{
+    text-decoration: none;
+    color:white;
+  }
+  .navLink:hover{
+    color: #f97316;
+  }
+  
+  .footerColumn ul li  a{
+    text-decoration: none;
+    color: white;
+  }
+  
+  .footerColumn ul li a:hover {
+    color: #f97316;
+  }
+  
+  .footerColumn p {
+    margin-bottom: 10px;
+    line-height: 1.6;
+  }
+  
+  .phoneNumber {
+    color: #f97316;
+    font-weight: bold;
+    font-size: 18px;
+  }
+  
+  .socialIcons {
+    margin-top: 10px;
+  }
+  
+  .socialIcons i {
+    margin-right: 10px;
+    font-size: 20px;
+    color: #333;
+  }
+  
+  .socialIcons i:hover {
+    color: #f97316;
+  }
+  
+  .newsletterForm {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+  }
+  
+  .newsletterForm input {
+    padding: 10px;
+    border: 2px solid #f97316;
+    border-radius: 5px;
+    outline: none;
+    flex: 1;
+    margin-right: 10px;
+  }
+  
+  .newsletterForm button {
+    background-color: #f97316;
+    color: white;
+    border: none;
+    padding: 15px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .newsletterForm button:hover {
+    background-color: #d86013;
+  }
+  
+  .footerBottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+  }
+  
+  .footerBottom p {
+    color: #888;
+  }
+  
+  .footerBottom p a {
+    color: #f97316;
+    text-decoration: none;
+  }
+  

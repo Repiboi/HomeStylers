@@ -1,0 +1,134 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+  }
+  
+  /* Navbar Styles */
+  .navbar {
+    background-color: rgba(48, 45, 45, 0.4);
+    -webkit-backdrop-filter: blur(5px);
+    backdrop-filter: blur(5px);
+    padding: 1rem 2rem;
+    position:fixed;
+    z-index: 5;
+    width: 100%;
+  }
+  
+  .navbarContent {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .logo {
+    color: #fff;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+    font-family: "Rokkitt", serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 4px;
+    transition: all 0.3s ease;
+  }
+
+  /* Hamburger active (X) state */
+.active .hamburger div:nth-child(1) {
+  transform: rotate(45deg) translate(10.5px, 10.5px);
+}
+
+.active .hamburger div:nth-child(2) {
+  opacity: 0;
+}
+
+.active .hamburger div:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+}
+  
+  
+  .navLinks {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .navLinks li {
+    margin-left: 20px;
+    position: relative;
+  }
+  
+  .navLinks li .navList {
+    position: relative;
+    text-decoration: none;
+    color: #fff;
+    font-size: 18px;
+    padding-bottom: 5px;
+  }
+  
+  .navLinks li .navList::before {
+    position: absolute;
+    content: '';
+    left: 0;
+    bottom: 0;
+    height: 2px;
+    width: 100%;
+    background: white;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s linear;
+  }
+  
+  .navLinks li .navList:hover::before {
+    transform: scaleX(1);
+    transform-origin: left;
+  }
+  
+  @media (max-width: 768px) {
+    .hamburger {
+      display: flex;
+      /* margin-left: 20%; */
+    }
+    .hamburger:active .hamburger{
+      display: none;
+    }
+    .navLinks {
+      display: none;
+      position: absolute;
+      top: 65px;
+      left: 0;
+      width: 100%;
+      background-color: rgba(48, 45, 45, 0.4);
+      -webkit-backdrop-filter: blur(5px);
+      backdrop-filter: blur(5px);
+      flex-direction: column;
+      align-items: center;
+      padding: 30px 0 ;
+      font-size: 22px;
+      font-weight: bold;
+      gap: 10px;
+    }
+    .navbarContent.active .navLinks {
+      display: flex;
+    }
+  }
